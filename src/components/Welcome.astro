@@ -1,17 +1,3 @@
 ---
-import { getCollection } from "astro:content";
 
-const allBlogPosts = await getCollection("blog");
 ---
-
-<ul>
-	{
-		allBlogPosts.map((post) => (
-			<li>
-				<h3>{post.data.title}</h3>
-				<h4>{post.data.description}</h4>
-				<p>{post.data.pubDate}</p>
-			</li>
-		))
-	}
-</ul>
