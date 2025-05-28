@@ -1,7 +1,13 @@
+:root {
+    --white: #f6f6f6;
+
+    --tight-spacing: -0.05em;
+}
+
 html,
 body {
     background-color: #171521;
-    color: #f6f6f6;
+    color: var(--white);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     margin: 0;
     width: 100%;
@@ -14,13 +20,19 @@ main {
     padding-right: 5vw;
     margin-left: auto;
     margin-right: auto;
+    min-height: 100vh;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 2rem;
-    letter-spacing: -0.05em;
-    margin: 0.5em 0 0.5em 0;
+    letter-spacing: var(--tight-spacing);
+    margin: 0.5em 0;
     font-weight: 700;
+}
+
+h3 {
+    letter-spacing: var(--tight-spacing);
 }
 
 p {
@@ -29,9 +41,10 @@ p {
 
 }
 
-nav {
+nav,
+footer {
     max-width: 80rem;
-    padding: 0.5em 5vw 0.5em 5vw;
+    padding: 0.5em 5vw;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -39,7 +52,7 @@ nav {
 }
 
 a {
-    color: #f6f6f6;
+    color: var(--white);
 }
 
 /* inter-regular - latin */

@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+const projects = await getCollection("projects");
+---
+
+<section>
+    <h2>01. PROJECTS</h2>
+    <ul>
+        {
+            projects.map((project) => (
+                <li>
+                    <a href={`/projects/${project.id}`}>
+                        <h3>{project.data.title}</h3>
+                        <p>{project.data.description}</p>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</section>
+
+<style>
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    h3,
+    p {
+        max-width: 90%;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    li {
+        border-top: 1px solid var(--white);
+    }
+
+    li:last-child {
+        border-bottom: 1px solid var(--white);
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing:;
+    }
+</style>
