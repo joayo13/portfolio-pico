@@ -1,5 +1,6 @@
 ---
 import "../global.css";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -9,9 +10,12 @@ import "../global.css";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Astro Pico</title>
 	</head>
 	<body>
-		<slot />
+		<Header />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
