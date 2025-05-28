@@ -1,0 +1,42 @@
+<div>
+    <svg
+        class="arrow-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <line x1="5" y1="12" x2="19" y2="12" class="arrow-line"></line>
+        <polyline points="12 5 19 12 12 19" class="arrow-head"></polyline>
+    </svg>
+</div>
+
+<style is:global>
+    .arrow-icon {
+        width: 2rem;
+        height: 2rem;
+        stroke: currentColor;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .arrow-line {
+        transform: scaleX(0) translateX(10px);
+        transform-origin: 25%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .group:hover .arrow-line {
+        transform: scaleX(1) translateX(0);
+    }
+
+    .arrow-head {
+        transform: translateX(-0.5rem);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .group:hover .arrow-head {
+        transform: translateX(0);
+    }
+</style>

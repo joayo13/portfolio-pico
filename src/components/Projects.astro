@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import ArrowLink from "./ArrowLink.astro";
 const projects = await getCollection("projects");
 ---
 
@@ -9,9 +10,12 @@ const projects = await getCollection("projects");
         {
             projects.map((project) => (
                 <li>
-                    <a href={`/projects/${project.id}`}>
-                        <h3>{project.data.title}</h3>
-                        <p>{project.data.description}</p>
+                    <a class="group" href={`/projects/${project.id}`}>
+                        <article>
+                            <h3>{project.data.title}</h3>
+                            <p>{project.data.description}</p>
+                        </article>
+                        <ArrowLink />
                     </a>
                 </li>
             ))
@@ -24,6 +28,12 @@ const projects = await getCollection("projects");
         text-decoration: none;
         display: block;
         padding: 1em 0;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     ul {
