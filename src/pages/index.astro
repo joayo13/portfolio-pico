@@ -1,19 +1,20 @@
 ---
-import Blog from "../components/Blog.astro";
-import Hero from "../components/Hero.astro";
-import Projects from "../components/Projects.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Blog from "@components/Blog.astro";
+import Hero from "@components/Hero.astro";
+import Projects from "@components/Projects.astro";
+import { HOME, SITE } from "@consts";
+import PageLayout from "@layouts/PageLayout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<BaseLayout>
+<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
     <Hero />
-    <Projects />
+    <Projects sliceAmount={SITE.NUM_PROJECTS_ON_HOMEPAGE} />
     <!-- spacer between sections -->
     <div style="height: 10rem;"></div>
-    <Blog />
+    <Blog sliceAmount={SITE.NUM_POSTS_ON_HOMEPAGE} />
     <!-- spacer between sections -->
     <div style="height: 10rem;"></div>
-</BaseLayout>
+</PageLayout>

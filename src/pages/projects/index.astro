@@ -1,0 +1,9 @@
+---
+import Projects from "@components/Projects.astro";
+import { PROJECTS } from "@consts";
+import PageLayout from "@layouts/PageLayout.astro";
+---
+
+<PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
+    <Projects sliceAmount={0} />
+</PageLayout>

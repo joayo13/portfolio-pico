@@ -1,7 +1,17 @@
 ---
 import { getCollection } from "astro:content";
 import ArrowLink from "./ArrowLink.astro";
-const blog = await getCollection("blog");
+
+const { sliceAmount } = Astro.props;
+
+interface Props {
+    sliceAmount: number;
+}
+let blog = await getCollection("blog");
+
+if (sliceAmount) {
+    blog = blog.slice(0, sliceAmount);
+}
 ---
 
 <section id="blog">

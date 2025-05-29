@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import { PROJECTS } from "@consts";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
     const projects = await getCollection("projects");
@@ -14,10 +15,16 @@ const { project } = Astro.props;
 const { Content } = await render(project);
 ---
 
-<BaseLayout>
+<PageLayout title={project.data.title} description={project.data.description}>
     <h1>{project.data.title}</h1>
+    <span>
+        <p>{project.data.pubDate.toDateString()}</p>
+        <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}
+            >repo</a
+        >
+    </span>
     <Content />
-</BaseLayout>
+</PageLayout>
 
 <style>
     h1 {
