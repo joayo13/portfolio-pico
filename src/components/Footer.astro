@@ -1,6 +1,8 @@
+---
+import { SITE, SOCIALS } from "@consts";
+---
+
 <footer>
-    <a style="font-weight: 700;" href="/">A.P</a>
-    <a href="https://github.com/joayo13">github</a>
-    <a href="/">linkedin</a>
-    <a href="/">email</a>
+    <a style="font-weight: 700;" href="/">{SITE.INITIALS}</a>
+    {SOCIALS.map((social) => <a href={social.HREF}>{social.NAME}</a>)}
 </footer>

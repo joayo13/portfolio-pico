@@ -2,6 +2,7 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
     NAME: "Astro Pico",
+    INITIALS: "A.P",
     NUM_POSTS_ON_HOMEPAGE: 2,
     NUM_PROJECTS_ON_HOMEPAGE: 2,
 };
@@ -28,10 +29,10 @@ export const SOCIALS: Socials = [
     },
     {
         NAME: "github",
-        HREF: "https://github.com/markhorn-dev"
+        HREF: "https://github.com/joayo13"
     },
     {
         NAME: "linkedin",
-        HREF: "https://www.linkedin.com/in/markhorn-dev",
+        HREF: "https://www.linkedin.com/in/jordan-ayotte-b90747211/",
     }
 ];
