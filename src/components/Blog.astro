@@ -4,13 +4,13 @@ import ArrowLink from "./ArrowLink.astro";
 const blog = await getCollection("blog");
 ---
 
-<section>
+<section id="blog">
     <h2>02. BLOG</h2>
     <ul>
         {
             blog.map((post) => (
                 <li>
-                    <a class="group" href={`/blog/${post.id}`}>
+                    <a class="group" href={`/posts/${post.id}`}>
                         <article>
                             <h3>{post.data.title}</h3>
                             <p>{post.data.description}</p>

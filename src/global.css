@@ -1,6 +1,7 @@
 :root {
     --white: #f6f6f6;
     --tight-spacing: -0.05em;
+    --site-max-width: 60rem;
 }
 
 html,
@@ -13,8 +14,12 @@ body {
     height: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 main {
-    max-width: 80rem;
+    max-width: var(--site-max-width);
     padding-left: 5vw;
     padding-right: 5vw;
     margin-left: auto;
@@ -35,14 +40,13 @@ h3 {
 }
 
 p {
-    line-height: 1.35em;
+    line-height: 1.5em;
     font-weight: 400;
 
 }
 
-nav,
 footer {
-    max-width: 80rem;
+    max-width: var(--site-max-width);
     padding: 0.5em 5vw;
     display: flex;
     justify-content: space-between;
