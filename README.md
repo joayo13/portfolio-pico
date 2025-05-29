@@ -1,48 +1,80 @@
-# Astro Starter Kit: Basics
+# Astro Pico
 
-```sh
-npm create astro@latest -- --template basics
+A minimal, fast, and modern website built with [Astro](https://astro.build/). Designed for performance, clarity, and simplicity — with self-hosted fonts and no external CSS frameworks.
+
+## ✨ Features
+
+- ⚡ Built with Astro — blazing fast static rendering
+- 🔤 Self-hosted Inter font (regular + bold)
+- 📄 Clean, semantic HTML
+- ♿ Accessible and responsive layout
+- 🚀 Deploy-ready for Netlify
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/joayo13/astro-pico.git
+cd astro-pico
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### 3. Start the dev server
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Then visit [http://localhost:4321](http://localhost:4321) in your browser.
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 📦 Build for Production
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm run build
+```
 
-## 👀 Want to learn more?
+Then preview the final output:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm run preview
+```
+
+---
+
+## 🧩 Project Structure
+
+```
+src/
+  components/    → Reusable UI parts
+  layouts/       → Base layout template
+  pages/         → Routes for your site
+  content/       → Project and blog markdown files
+  consts.ts      → General Site config
+public/
+  fonts/         → Self-hosted fonts
+  favicon.svg    → Site icon
+```
+
+---
+
+## 🚀 Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joayo13/astro-pico)
+
+One click to clone, build, and deploy your own copy of Astro Pico!
+
+---
+
+## 📄 License
+
+MIT — use it freely for personal or commercial projects.
+
+
