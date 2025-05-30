@@ -38,6 +38,8 @@ interface Props {
                 }, index * 200);
             });
         }
-        staggerAnimation();
+        window.addEventListener("DOMContentLoaded", () => {
+            staggerAnimation();
+        });
     </script>
 </head>
