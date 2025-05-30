@@ -79,3 +79,16 @@ a {
     src: url('/fonts/inter-v18-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+.animate {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all;
+    transition-timing-function: ease-out;
+    transition-duration: 500ms;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}

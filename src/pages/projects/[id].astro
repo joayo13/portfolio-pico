@@ -15,18 +15,28 @@ const { Content } = await render(project);
 ---
 
 <PageLayout title={project.data.title} description={project.data.description}>
-    <h1>{project.data.title}</h1>
-    <span>
-        <p>{project.data.pubDate.toDateString()}</p>
+    <h1 class="animate">{project.data.title}</h1>
+    <p class="animate">{project.data.pubDate.toDateString()}</p>
+    <span class="animate">
         <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}
             >repo</a
         >
     </span>
-    <Content />
+    <article class="animate">
+        <Content />
+    </article>
 </PageLayout>
 
 <style>
     h1 {
         font-size: 3rem;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    span {
+        display: block;
+        margin: 0.5rem 0;
     }
 </style>

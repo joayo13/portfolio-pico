@@ -29,4 +29,15 @@ interface Props {
         type="font/woff2"
         crossorigin="anonymous"
     />
+    <script>
+        const elements = document.querySelectorAll(".animate");
+        function staggerAnimation() {
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add("show");
+                }, index * 200);
+            });
+        }
+        staggerAnimation();
+    </script>
 </head>

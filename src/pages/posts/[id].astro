@@ -15,13 +15,19 @@ const { Content } = await render(post);
 ---
 
 <PageLayout title={post.data.title} description={post.data.description}>
-    <h1>{post.data.title}</h1>
-    <p>{post.data.pubDate.toDateString()}</p>
-    <Content />
-</PageLayout>
+    <h1 class="animate">{post.data.title}</h1>
+    <p class="animate">{post.data.pubDate.toDateString()}</p>
+    <article style="margin-top: 1rem;" class="animate">
+        <Content />
+    </article>
 
-<style>
-    h1 {
-        font-size: 3rem;
-    }
-</style>
+    <style>
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</PageLayout>
