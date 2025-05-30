@@ -12,9 +12,19 @@ import PageLayout from "@layouts/PageLayout.astro";
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
     <Hero />
     <Projects sliceAmount={SITE.NUM_PROJECTS_ON_HOMEPAGE} />
+    <a href="/projects">see all projects</a>
     <!-- spacer between sections -->
     <div style="height: 10rem;"></div>
     <Blog sliceAmount={SITE.NUM_POSTS_ON_HOMEPAGE} />
+    <a href="/posts">see all posts</a>
     <!-- spacer between sections -->
     <div style="height: 10rem;"></div>
 </PageLayout>
+
+<style>
+    a {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+    }
+</style>
