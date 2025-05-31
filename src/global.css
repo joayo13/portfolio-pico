@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    margin: 1rem 0;
 }
 
 main {
@@ -56,6 +57,10 @@ footer {
 
 a {
     color: var(--white);
+}
+
+a:hover .arrow-icon {
+    opacity: 1;
 }
 
 /* inter-regular - latin */
