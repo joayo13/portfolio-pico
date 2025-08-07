@@ -69,7 +69,7 @@ public/
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joayo13/astro-pico)
 
-One click to clone, build, and deploy your own copy of Astro Pico!
+One click to clone, build, and deploy your own copy of Astro Asteroid!
 
 ---
 
