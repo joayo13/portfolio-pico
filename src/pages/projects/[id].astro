@@ -17,7 +17,7 @@ const { Content } = await render(project);
 <PageLayout title={project.data.title} description={project.data.description}>
     <h1 class="animate">{project.data.title}</h1>
     <p class="animate">{project.data.pubDate.toDateString()}</p>
-    <span class="animate">
+    <span style="display: block;" class="animate">
         <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}
             >repo</a
         >
@@ -26,3 +26,5 @@ const { Content } = await render(project);
         <Content />
     </article>
 </PageLayout>
+
+
