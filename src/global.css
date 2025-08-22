@@ -126,10 +126,10 @@ img {
 
 .animate {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(0.75rem);
     transition: all;
     transition-timing-function: ease-out;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
 }
 
 .animate.show {
