@@ -1,12 +1,18 @@
 :root {
-    --white: #f6f6f6;
-    --tight-spacing: -0.05em;
+    --white: #f4f4f4;
+    --tighter-spacing: -0.045em;
+    --tight-spacing: -0.035em;
     --site-max-width: 60rem;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html,
 body {
-    background-color: #171521;
+    background-color: #0c0909;
     color: var(--white);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -16,7 +22,11 @@ body {
 
 img {
     max-width: 100%;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
+}
+
+p:has(img) {
+    margin: 0;
 }
 
 main {
@@ -28,22 +38,48 @@ main {
     min-height: 100vh;
 }
 
-h1,
+h1 {
+    font-size: 3rem;
+    letter-spacing: var(--tighter-spacing);
+    font-weight: 700;
+    margin-top: 1.25em;
+    margin-bottom: 0.35em;
+}
 h2 {
     font-size: 2rem;
     letter-spacing: var(--tight-spacing);
-    margin: 0.5em 0;
     font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 h3 {
-    letter-spacing: var(--tight-spacing);
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    margin-top: 0.85em;
+    margin-bottom: 0.5em;
+}
+
+h6 {
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
 }
 
 p {
     line-height: 1.5em;
-    font-weight: 400;
+    margin-bottom: 1.25em;
+}
 
+pre {
+    margin-bottom: 1.25em;
 }
 
 footer {
@@ -61,6 +97,9 @@ a {
 
 a:hover .arrow-icon {
     opacity: 1;
+}
+img {
+    border-radius: 0.5em;
 }
 
 /* inter-regular - latin */

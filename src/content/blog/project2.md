@@ -4,7 +4,7 @@ description: Get started with markdown.
 pubDate: 2025-05-27
 ---
 
-### Headings
+## Headings
 
 To create headings, use hash symbols (#) followed by a space. The number of hash symbols indicates the heading level.
 
@@ -26,7 +26,7 @@ To create headings, use hash symbols (#) followed by a space. The number of hash
 
 ---
 
-### Paragraphs
+## Paragraphs
 
 Simply type non-indented text, surrounded by empty lines.
 
@@ -44,7 +44,7 @@ I think I'll use it to format all of my content from now on.
 
 ---
 
-### Bold
+## Bold
 
 Use double `*` or `_` to denote bold text.
 
@@ -57,7 +57,7 @@ it was the __worst__ of times
 
 ---
 
-### Italic
+## Italic
 
 Use single `*` to denote italic text.
 
@@ -70,7 +70,7 @@ it was the age of *foolishness*
 
 ---
 
-### Bold and Italic
+## Bold and Italic
 
 Use `*`, `**` and `_` to combine effects.
 
@@ -83,7 +83,7 @@ it was the season of *__darkness__*
 
 ---
 
-### Line breaks
+## Line breaks
 
 Use triple `---` to denote a line break.
 
@@ -95,7 +95,7 @@ Use triple `---` to denote a line break.
 
 ---
 
-### Links
+## Links
 
 Links can be added using the `[title](url)` pattern.
 
@@ -107,7 +107,7 @@ Nano was made with [Astro](https://astro.build)
 
 ---
 
-### Quick link
+## Quick link
 
 Add an quick link using the `<url>` pattern.
 
@@ -119,7 +119,7 @@ Add an quick link using the `<url>` pattern.
 
 ---
 
-### Email link
+## Email link
 
 Add an email link using the `<emailaddress>` pattern.
 
@@ -131,7 +131,7 @@ Email me at <jordanayotte13@outlook.com> using your mail app.
 
 ---
 
-### Ordered Lists
+## Ordered Lists
 
 Add a number followed by a period for items. For sub items, indent.
 
@@ -151,7 +151,7 @@ Add a number followed by a period for items. For sub items, indent.
 
 ---
 
-### Unordered List
+## Unordered List
 
 Add a `-` or `+` for items. Don't mix. For sub items, indent.
 
@@ -171,7 +171,7 @@ Add a `-` or `+` for items. Don't mix. For sub items, indent.
 
 ---
 
-### Relative Image
+## Relative Image
 
 Use the `![title](./image.*)` pattern relative to the same folder as the markdown file. Notice the period.
 
@@ -183,7 +183,7 @@ Use the `![title](./image.*)` pattern relative to the same folder as the markdow
 
 ---
 
-### Public Image
+## Public Image
 
 Use the `![title](/image.*)` pattern relative to the public folder. No period.
 
@@ -195,7 +195,7 @@ Use the `![title](/image.*)` pattern relative to the public folder. No period.
 
 ---
 
-### External Image
+## External Image
 
 Use the `![title](url)` pattern.
 
@@ -207,7 +207,7 @@ Use the `![title](url)` pattern.
 
 ---
 
-### Blockquotes
+## Blockquotes
 
 To add a blockquote add a `>` before a paragraph. For multi-line blockquotes,
 add additional `>` for each line and include an empty spacer line.
@@ -224,7 +224,7 @@ add additional `>` for each line and include an empty spacer line.
 
 ---
 
-### Strikethrough
+## Strikethrough
 
 Use the tilde `~` symbol to strikethrough text.
 
@@ -236,7 +236,7 @@ Use the tilde `~` symbol to strikethrough text.
 
 ---
 
-### Subscript
+## Subscript
 
 Use the `<sub>` tag to denote subscript.
 
@@ -248,7 +248,7 @@ H<sub>2</sub>O
 
 ---
 
-### Superscript
+## Superscript
 
 Use the `<sup>` tag to denote superscript.
 
@@ -260,7 +260,7 @@ E=mc<sup>2</sup>
 
 ---
 
-### Keyboard
+## Keyboard
 
 Use the `<kbd>` tag to denote keys on the keyboard.
 
@@ -272,7 +272,7 @@ Use the `<kbd>` tag to denote keys on the keyboard.
 
 ---
 
-### Abbreviate
+## Abbreviate
 
 Use the `<abbr>` tag to denote abbreviation.
 
@@ -284,7 +284,7 @@ Use the `<abbr>` tag to denote abbreviation.
 
 ---
 
-### Highlight
+## Highlight
 
 Use the `<mark>` tag to denote highlighted text.
 
@@ -296,7 +296,7 @@ Use the `<mark>` tag to denote highlighted text.
 
 ---
 
-### Task Lists
+## Task Lists
 
 Combine a list with 2 square brackets. `spc` incomplete `x` complete.
 
@@ -312,7 +312,7 @@ Combine a list with 2 square brackets. `spc` incomplete `x` complete.
 
 ---
 
-### Tables
+## Tables
 
 Use `-` for header, `|` for columns, `:` for alignment.
 
@@ -332,7 +332,7 @@ Use `-` for header, `|` for columns, `:` for alignment.
 
 ---
 
-### Footnotes
+## Footnotes
 
 Add a caret and an id inside brackets `[^1]` to create a footnote.
 
@@ -350,7 +350,7 @@ See the bottom of the page to view the footnotes.
 
 ---
 
-### Code
+## Code
 
 Use backticks ` to denote a word or phrase as code.
 
@@ -362,7 +362,7 @@ Use backticks ` to denote a word or phrase as code.
 
 ---
 
-### Code Blocks
+## Code Blocks
 
 Denote a code block by enclosing a section of valid code in triple backticks. Syntax highlight the code by using the shorthand symbol for the language. Ex: js, javascript, python
 
@@ -382,7 +382,7 @@ Denote a code block by enclosing a section of valid code in triple backticks. Sy
 
 ---
 
-### Conclusion
+## Conclusion
 
 Please refer to markdownguide.org for best practices as well as advanced and extended syntax.
 

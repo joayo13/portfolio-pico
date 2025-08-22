@@ -4,7 +4,7 @@ description: Lorem Ipsum Dolor Sit
 pubDate: 2025-05-28 
 ---
 
-# Lorem Ipsum Dolor Sit
+## Lorem Ipsum Dolor Sit
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut eros ut velit vestibulum scelerisque. Suspendisse potenti. Duis suscipit purus non magna vulputate, at facilisis massa faucibus.
 
@@ -21,7 +21,7 @@ barify('ipsum');
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ac dolor ut nunc porta luctus. Maecenas id ipsum sapien. Fusce sodales vulputate elit vel dapibus.
 
-# Consectetur Adipiscing Elit
+## Consectetur Adipiscing Elit
 
 Curabitur vehicula est id convallis lacinia. Aenean sodales magna in dui congue, nec egestas erat sollicitudin. Nulla facilisi.
 
@@ -41,7 +41,7 @@ updateBar('quux');
 
 Vestibulum eu magna a lorem tincidunt lobortis. In luctus blandit malesuada. Sed a felis fringilla, vestibulum enim a, ullamcorper sapien.
 
-# Sed Do Eiusmod Tempor
+## Sed Do Eiusmod Tempor
 
 Nunc eget iaculis nunc. Suspendisse potenti. Etiam fermentum eros sed velit faucibus pretium.
 
