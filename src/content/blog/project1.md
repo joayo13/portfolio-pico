@@ -1,7 +1,7 @@
 ---
 title: Lorem Ipsum
 description: Lorem Ipsum Dolor Sit
-pubDate: 2025-05-28 
+pubDate: 2025-05-28
 ---
 
 ## Lorem Ipsum Dolor Sit
@@ -9,15 +9,15 @@ pubDate: 2025-05-28
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut eros ut velit vestibulum scelerisque. Suspendisse potenti. Duis suscipit purus non magna vulputate, at facilisis massa faucibus.
 
 ```js
-let foo = 'lorem';
+let foo = "lorem";
 
 function barify(qux) {
-  foo = `${foo}-${qux}`;
-  console.log(foo);
+    foo = `${foo}-${qux}`;
+    console.log(foo);
 }
 
-barify('ipsum');
-````
+barify("ipsum");
+```
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ac dolor ut nunc porta luctus. Maecenas id ipsum sapien. Fusce sodales vulputate elit vel dapibus.
 
@@ -27,16 +27,16 @@ Curabitur vehicula est id convallis lacinia. Aenean sodales magna in dui congue,
 
 ```js
 const loremState = {
-  foo: 42,
-  bar: 'baz'
+    foo: 42,
+    bar: "baz",
 };
 
 function updateBar(newBar) {
-  loremState.bar = newBar;
-  console.log('Updated bar:', loremState.bar);
+    loremState.bar = newBar;
+    console.log("Updated bar:", loremState.bar);
 }
 
-updateBar('quux');
+updateBar("quux");
 ```
 
 Vestibulum eu magna a lorem tincidunt lobortis. In luctus blandit malesuada. Sed a felis fringilla, vestibulum enim a, ullamcorper sapien.
@@ -47,11 +47,11 @@ Nunc eget iaculis nunc. Suspendisse potenti. Etiam fermentum eros sed velit fauc
 
 ```js
 function dolorCounter() {
-  let dolor = 0;
-  return function() {
-    dolor += 5;
-    return `Dolor is now ${dolor}`;
-  };
+    let dolor = 0;
+    return function () {
+        dolor += 5;
+        return `Dolor is now ${dolor}`;
+    };
 }
 
 const countDolor = dolorCounter();

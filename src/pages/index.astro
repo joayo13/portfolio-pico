@@ -1,6 +1,6 @@
 ---
 import Blog from "@components/Blog.astro";
-import Hero from "@components/Hero.astro";
+import Hero from "@components/Hero.jsx";
 import Projects from "@components/Projects.astro";
 import { HOME, SITE } from "@consts";
 import PageLayout from "@layouts/PageLayout.astro";
@@ -10,7 +10,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
-    <Hero />
+    <Hero client:load />
     <Projects sliceAmount={SITE.NUM_PROJECTS_ON_HOMEPAGE} />
     <a href="/projects">see all projects</a>
     <!-- spacer between sections -->

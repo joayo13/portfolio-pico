@@ -17,7 +17,7 @@ A minimal, fast, and modern website built with [Astro](https://astro.build/). De
 ```bash
 git clone https://github.com/joayo13/astro-pico.git
 cd astro-pico
-````
+```
 
 ### 2. Install dependencies
 
@@ -76,5 +76,3 @@ One click to clone, build, and deploy your own copy of Astro Asteroid!
 ## 📄 License
 
 MIT — use it freely for personal or commercial projects.
-
-

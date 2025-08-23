@@ -29,10 +29,10 @@ export const SOCIALS: Socials = [
     },
     {
         NAME: "github",
-        HREF: "https://github.com/joayo13"
+        HREF: "https://github.com/joayo13",
     },
     {
         NAME: "linkedin",
         HREF: "https://www.linkedin.com/in/jordan-ayotte-b90747211/",
-    }
+    },
 ];
