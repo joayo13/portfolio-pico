@@ -12,8 +12,8 @@ export const HOME: Metadata = {
     DESCRIPTION: "Astro Pico is a minimal and lightweight blog and portfolio.",
 };
 
-export const BLOG: Metadata = {
-    TITLE: "Blog",
+export const POSTS: Metadata = {
+    TITLE: "Posts",
     DESCRIPTION: "A collection of articles on topics I am passionate about.",
 };
 

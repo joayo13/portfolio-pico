@@ -2,19 +2,19 @@
 import { getCollection } from "astro:content";
 import ArrowLink from "./ArrowLink.astro";
 
-let projects = await getCollection("projects");
+let posts = await getCollection("posts");
 ---
 
-<section id="projects">
-    <h2 class="animate">PROJECTS</h2>
+<section>
+    <h2 class="animate">POSTS</h2>
     <ul>
         {
-            projects.map((project) => (
+            posts.map((post) => (
                 <li class="animate">
-                    <a class="group" href={`/projects/${project.id}`}>
+                    <a class="group" href={`/posts/${post.id}`}>
                         <article>
-                            <h3>{project.data.title}</h3>
-                            <p>{project.data.description}</p>
+                            <h3>{post.data.title}</h3>
+                            <p>{post.data.description}</p>
                         </article>
                         <ArrowLink />
                     </a>
@@ -45,7 +45,7 @@ let projects = await getCollection("projects");
 
     h3,
     p {
-        max-width: 80%;
+        max-width: 20rem;
         text-wrap: nowrap;
         text-overflow: ellipsis;
         white-space: nowrap;

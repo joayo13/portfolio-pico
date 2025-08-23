@@ -1,12 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import ArrowLink from "./ArrowLink.astro";
-
+import { SITE } from "@consts";
 let projects = await getCollection("projects");
+projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE)
 ---
 
 <section id="projects">
-    <h2 class="animate">PROJECTS</h2>
+    <h2 class="animate">RECENT PROJECTS</h2>
     <ul>
         {
             projects.map((project) => (
@@ -22,17 +23,14 @@ let projects = await getCollection("projects");
             ))
         }
     </ul>
+    <a class="see-all-link animate" href="/projects">see all projects</a>
 </section>
 
 <style>
-    a {
+    .group {
         text-decoration: none;
         display: block;
         padding: 1em 0;
-    }
-
-    .group {
-        position: relative;
     }
 
     ul {

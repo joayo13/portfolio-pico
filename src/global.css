@@ -125,7 +125,6 @@ img {
 }
 
 .hero-section {
-    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,4 +163,10 @@ img {
     border-bottom-left-radius: 40% 59%;
     margin-left: auto;
     margin-right: auto;
+}
+.see-all-link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 1.25em;
 }

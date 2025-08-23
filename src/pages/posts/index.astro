@@ -1,12 +1,12 @@
 ---
-import Blog from "@components/Blog.astro";
-import { BLOG } from "@consts";
+import Posts from "@components/Posts.astro";
+import { POSTS } from "@consts";
 import PageLayout from "@layouts/PageLayout.astro";
 import { getCollection } from "astro:content";
-const blog = await getCollection("blog");
-const blogLength = blog.length;
+const posts = await getCollection("posts");
+const postsLength = posts.length;
 ---
 
-<PageLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
-    <Blog sliceAmount={blogLength} />
+<PageLayout title={POSTS.TITLE} description={POSTS.DESCRIPTION}>
+    <Posts sliceAmount={postsLength} />
 </PageLayout>

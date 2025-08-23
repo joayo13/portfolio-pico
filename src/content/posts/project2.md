@@ -168,18 +168,18 @@ Add a number followed by a period for items. For sub items, indent.
 Add a `-` or `+` for items. Don't mix. For sub items, indent.
 
 ```md
-- Item 1
-- Item 2
-    - Sub item 1
-    - Sub item 2
-- Item 3
+-   Item 1
+-   Item 2
+    -   Sub item 1
+    -   Sub item 2
+-   Item 3
 ```
 
-- Item 1
-- Item 2
-    - Sub item 1
-    - Sub item 2
-- Item 3
+-   Item 1
+-   Item 2
+    -   Sub item 1
+    -   Sub item 2
+-   Item 3
 
 ---
 
@@ -313,14 +313,14 @@ Use the `<mark>` tag to denote highlighted text.
 Combine a list with 2 square brackets. `spc` incomplete `x` complete.
 
 ```md
-- [x] Take out trash
-- [ ] Mow the lawn
-- [ ] Buy more bitcoin
+-   [x] Take out trash
+-   [ ] Mow the lawn
+-   [ ] Buy more bitcoin
 ```
 
-- [x] Take out trash
-- [ ] Mow the lawn
-- [ ] Buy more bitcoin
+-   [x] Take out trash
+-   [ ] Mow the lawn
+-   [ ] Buy more bitcoin
 
 ---
 
