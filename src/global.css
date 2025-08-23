@@ -80,6 +80,8 @@ p {
 
 pre {
     margin-bottom: 1.25em;
+    padding: 1.5rem;
+    border-radius: 0.75em;
 }
 
 footer {
