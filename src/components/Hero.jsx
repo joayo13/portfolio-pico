@@ -53,9 +53,9 @@ export default function Hero() {
                 <div ref={container} className="container">
                     <div ref={boxRef} className="box"></div>
                 </div>
-                <div>
+                <div className="hero-section-intro">
                     <h1 className="animate">Astro Pico</h1>
-                    <p style={{ maxWidth: "20rem" }} className="animate">
+                    <p className="animate">
                         I'm a minimalist theme for Astro that leaves the bare necessities, use it as
                         a blog and a place to showcase your projects and resume.
                     </p>
