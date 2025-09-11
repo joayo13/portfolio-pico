@@ -1,9 +1,7 @@
 ---
-import Posts from "@components/Posts.astro";
 import Hero from "@components/Hero.astro";
-import Projects from "@components/Projects.astro";
 import RecentProjects from "@components/RecentProjects.astro";
-import { HOME, SITE } from "@consts";
+import { HOME } from "@consts";
 import PageLayout from "@layouts/PageLayout.astro";
 import RecentPosts from "@components/RecentPosts.astro";
 
@@ -12,7 +10,7 @@ import RecentPosts from "@components/RecentPosts.astro";
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
-    <Hero client:load />
+    <Hero />
     <RecentProjects />
     <RecentPosts />
 </PageLayout>
