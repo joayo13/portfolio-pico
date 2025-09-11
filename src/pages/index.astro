@@ -1,6 +1,6 @@
 ---
 import Posts from "@components/Posts.astro";
-import Hero from "@components/Hero.jsx";
+import Hero from "@components/Hero.astro";
 import Projects from "@components/Projects.astro";
 import RecentProjects from "@components/RecentProjects.astro";
 import { HOME, SITE } from "@consts";
@@ -13,17 +13,8 @@ import RecentPosts from "@components/RecentPosts.astro";
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
     <Hero client:load />
-    <!-- spacer between sections -->
-    <div style="height: 10rem;"></div>
     <RecentProjects />
-    
-    <!-- spacer between sections -->
-    <div style="height: 10rem;"></div>
-    <RecentPosts/>
-    <!-- spacer between sections -->
-    <div style="height: 10rem;"></div>
+    <RecentPosts />
 </PageLayout>
 
-<style>
-    
-</style>
+<style></style>

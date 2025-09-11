@@ -4,7 +4,9 @@ import ArrowLink from "./ArrowLink.astro";
 import { SITE } from "@consts";
 
 let posts = await getCollection("posts");
-posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, SITE.NUM_POSTS_ON_HOMEPAGE)
+posts
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
 ---
 
 <section>
@@ -28,7 +30,6 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(
 </section>
 
 <style>
-
     .group {
         text-decoration: none;
         display: block;

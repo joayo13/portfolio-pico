@@ -15,7 +15,7 @@ const { Content } = await render(post);
 ---
 
 <PageLayout title={post.data.title} description={post.data.description}>
-    <h1 class="animate">{post.data.title}</h2>
+    <h1 class="animate">{post.data.title}</h1>
     <p class="animate">{post.data.pubDate.toDateString()}</p>
     <article style="margin-top: 1rem;" class="animate">
         <Content />

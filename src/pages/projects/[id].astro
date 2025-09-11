@@ -18,13 +18,9 @@ const { Content } = await render(project);
     <h1 class="animate">{project.data.title}</h1>
     <p class="animate">{project.data.pubDate.toDateString()}</p>
     <span style="display: block;" class="animate">
-        <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}
-            >repo</a
-        >
+        <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}>repo</a>
     </span>
     <article class="animate">
         <Content />
     </article>
 </PageLayout>
-
-
