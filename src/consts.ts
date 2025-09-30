@@ -1,15 +1,15 @@
 import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
-    NAME: "Astro Pico",
-    INITIALS: "A.P",
+    NAME: "Jordan Ayotte",
+    INITIALS: "J.A",
     NUM_POSTS_ON_HOMEPAGE: 2,
     NUM_PROJECTS_ON_HOMEPAGE: 2,
 };
 
 export const HOME: Metadata = {
     TITLE: "Home",
-    DESCRIPTION: "Astro Pico is a minimal and lightweight blog and portfolio.",
+    DESCRIPTION: "Jordan Ayotte's Web Development Portfolio.",
 };
 
 export const POSTS: Metadata = {

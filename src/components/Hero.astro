@@ -1,3 +1,7 @@
+---
+import { SOCIALS } from "@consts";
+---
+
 <section class="hero-section">
     <article>
         <h1 class="animate">Jordan Ayotte</h1>
@@ -5,5 +9,8 @@
             Frontend developer from Ottawa, Ontario. Passionate about working on technically
             challenging projects that push the boundaries of web design and development.
         </p>
+        <span class="hero-links animate">
+            {SOCIALS.map((social) => <a href={social.HREF}>{social.NAME}</a>)}
+        </span>
     </article>
 </section>
