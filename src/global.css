@@ -115,7 +115,7 @@ img {
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/ibm-plex-mono-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/ibm-plex-mono-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* ibm-plex-mono-700 - latin */
@@ -124,7 +124,7 @@ img {
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/ibm-plex-mono-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/ibm-plex-mono-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-regular - latin */
 @font-face {
@@ -132,7 +132,7 @@ img {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/roboto-v49-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .hero-section {
     max-width: 28rem;
