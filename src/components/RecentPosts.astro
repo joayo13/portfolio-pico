@@ -6,7 +6,7 @@ import { SITE } from "@consts";
 let posts = await getCollection("posts");
 posts
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-    .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
+    .splice(SITE.NUM_PROJECTS_ON_HOMEPAGE, posts.length);
 ---
 
 <section>

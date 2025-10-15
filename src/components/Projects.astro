@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import ArrowLink from "./ArrowLink.astro";
 
 let projects = await getCollection("projects");
+projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <section id="projects">
