@@ -74,6 +74,7 @@ h6 {
 }
 
 p {
+    font-family: "Roboto", sans-serif;
     line-height: 1.6em;
     margin-bottom: 1.25em;
 }
@@ -122,7 +123,14 @@ img {
     font-weight: 700;
     src: url("../fonts/ibm-plex-mono-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 .hero-section {
     max-width: 28rem;
     margin-bottom: 7.5rem;
