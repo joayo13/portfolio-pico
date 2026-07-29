@@ -8,14 +8,15 @@ import { SITE } from "@consts";
 type Props = {
     title: string;
     description: string;
+    favicon?: string;
 };
 
-const { title, description } = Astro.props;
+const { title, description, favicon } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-    <Head title={`${title} | ${SITE.NAME}`} description={description} />
+    <Head title={`${title} | ${SITE.NAME}`} description={description} favicon={favicon} />
     <body>
         <Nav />
         <main>

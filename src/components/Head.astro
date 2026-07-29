@@ -1,16 +1,17 @@
 ---
-const { title, description } = Astro.props;
+const { title, description, favicon = "/favicon.svg" } = Astro.props;
 
 interface Props {
     title: string;
     description: string;
+    favicon?: string;
 }
 ---
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={favicon} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="title" content={title} />

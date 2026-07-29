@@ -14,7 +14,7 @@ const { project } = Astro.props;
 const { Content } = await render(project);
 ---
 
-<PageLayout title={project.data.title} description={project.data.description}>
+<PageLayout title={project.data.title} description={project.data.description} favicon="/programming.svg">
     <h1 class="animate">{project.data.title}</h1>
     <p class="animate">{project.data.pubDate.toDateString()}</p>
     <span style="display: block;" class="animate">

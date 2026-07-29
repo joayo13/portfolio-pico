@@ -6,6 +6,6 @@ import { getCollection } from "astro:content";
 const posts = await getCollection("posts");
 ---
 
-<PageLayout title={POSTS.TITLE} description={POSTS.DESCRIPTION}>
+<PageLayout title={POSTS.TITLE} description={POSTS.DESCRIPTION} favicon="/writing.svg">
     <Posts />
 </PageLayout>
