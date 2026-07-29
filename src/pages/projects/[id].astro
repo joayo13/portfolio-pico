@@ -17,17 +17,15 @@ const { Content } = await render(project);
 <PageLayout title={project.data.title} description={project.data.description} favicon="/programming.svg">
     <h1 class="animate">{project.data.title}</h1>
     <p class="animate">{project.data.pubDate.toDateString()}</p>
-    <span style="display: block;" class="animate">
-        {
-            project.data.demoURL ? (
-                <>
-                    <a href={project.data.demoURL}>demo</a> / <a href={project.data.repoURL}>repo</a>
-                </>
-            ) : (
-                <a href={project.data.repoURL}>repo</a>
-            )
-        }
-    </span>
+    {
+        (project.data.demoURL || project.data.repoURL) && (
+            <span style="display: block;" class="animate">
+                {project.data.demoURL && <a href={project.data.demoURL}>demo</a>}
+                {project.data.demoURL && project.data.repoURL && " / "}
+                {project.data.repoURL && <a href={project.data.repoURL}>repo</a>}
+            </span>
+        )
+    }
     <article class="animate">
         <Content />
     </article>
